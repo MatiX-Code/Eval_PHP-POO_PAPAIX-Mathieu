@@ -1,7 +1,6 @@
 <?php
 //3)	Dans le fichier Model.php, créez la classe Model. Son constructeur instancie un objet de connexion PDO.
 
-
 class Model
 {
     private PDO $bdd;
