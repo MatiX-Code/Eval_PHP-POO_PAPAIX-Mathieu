@@ -12,6 +12,7 @@ class View
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
     <title>Supergame</title>
 </head>
 <body>
@@ -25,7 +26,7 @@ class View
     public function displayFooter(): View
     {
         echo '<footer>
-        <p>Supergame - Evaluation PHP POO du 09/11/2026 ADRAR</p>
+        <p class="footer">Supergame - Evaluation PHP POO du 09/11/2026 ADRAR</p>
     </footer>
 </body>
 </html>';
