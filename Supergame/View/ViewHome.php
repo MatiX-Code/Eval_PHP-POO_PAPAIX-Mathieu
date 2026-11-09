@@ -45,7 +45,7 @@ class ViewHome extends View
             <h2>Ajouter un joueur</h2>
             <form action="" method="POST">
                 <label for="pseudo">Pseudo :</label>
-                <input type="text" name="pseudo" id="pseudo" placeholder="Votre pseudo" required> >
+                <input type="text" name="pseudo" id="pseudo" placeholder="Votre pseudo" required>
 
                 <label for="score">Score :</label>
                 <input type="number" name="score" id="score" placeholder="Votre score" required >
