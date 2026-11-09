@@ -57,7 +57,7 @@ class ViewHome extends View
                     <option value="3">DreamTeam</option>
                 </select>
 
-                <input type="submit" name="submit" value="Ajouter">
+                <input class="button" type="submit" name="submit" value="Ajouter">
             </form>
             <p>' . $this->getMessage() . '</p>
         </section>
