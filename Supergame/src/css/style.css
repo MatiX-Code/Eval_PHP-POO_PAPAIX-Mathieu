@@ -91,8 +91,19 @@
             color: #ffff;
             text-align: center;
         }
+        select{
+            padding: 5px;
+            border: #000000 1px solid;
+            border-radius: 25px;
+            margin-bottom: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: large;
+            font-weight: bolder;
+            text-align: center;
+        }
         .button{ 
-        cursor: pointer;
+            margin-top: 20px;
+            cursor: pointer;
         } 
         .button:hover{
             color: white;
