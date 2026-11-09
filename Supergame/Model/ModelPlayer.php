@@ -88,19 +88,18 @@ class ModelPlayer extends Model
         }
     }
 
-    public function findByPseudo(): array | bool
+    public function findByPseudo(string $pseudo): array | bool
     {
         try {
-            $req = $this->getBdd()->prepare('SELECT p.id_player, p.pseudo, p.score, p.id_team, t.team FROM player p 
-            INNER JOIN team t ON p.id_team = t.id_team;
-            WHERE p.pseudo = ?');
-
-            $pseudo = $this->getPseudo();
-            $req->bindParam(1, $pseudo, PDO::PARAM_STR);
-            $req->execute();
-            return $req->fetch(PDO::FETCH_ASSOC);
-        } catch (Exception $e) {
-            die($e->getMessage());
+            $stmt = $this->getBdd()->prepare('SELECT p.id_player, p.pseudo, p.score, p.id_team, t.team 
+                FROM player p 
+                INNER JOIN team t ON p.id_team = t.id_team 
+                WHERE p.pseudo = :pseudo
+            ');
+            $stmt->execute(['pseudo' => $pseudo]);
+            return $stmt->fetch(PDO::FETCH_ASSOC);
+        } catch (PDOException $e) {
+            die('Erreur : ' . $e->getMessage());
         }
     }
 

@@ -25,7 +25,7 @@ class View
     public function displayFooter(): View
     {
         echo '<footer>
-        <p>&copy; Supergame</p>
+        <p>Supergame - Evaluation PHP POO du 09/11/2026 ADRAR</p>
     </footer>
 </body>
 </html>';
