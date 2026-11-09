@@ -92,6 +92,8 @@
             text-align: center;
         }
         select{
+            background-color: #FFA500;
+            color: #ffff;
             padding: 5px;
             border: #000000 1px solid;
             border-radius: 25px;
